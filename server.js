@@ -1,10 +1,12 @@
-const express = require('express')
+const dotenv = require('dotenv');
+dotenv.config();
+const express = require('express');
 const app = express();
 
 
 
-
-const port = 3000;
+require('./config/config');
+const port = Config.get("App").PORT ||  3000;
 app.use(express.json());
 
 
