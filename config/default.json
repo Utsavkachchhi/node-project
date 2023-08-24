@@ -1,6 +1,8 @@
 {
     "Database":{
-
+        "URL": "127.0.0.1://27017",
+        "Debug": true,
+        "dbName": "library_management"
     },
     "App" : {
         "PORT" : 8000
